@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="/styles/form.css">
+	<script src="/script/edit.js"></script>
+</head>
+<body>
+    <div class="submit-form">
+      <div>
+        <p></p>
+        <p></p>
+        <div class="form_group">
+          <input
+            type="text"
+            id="name"
+            label="Product Title"
+            placeholder="Name"
+            required
+            name="prod_title"
+          />
+          <p></p>
+        </div>
+        <div class="form_group">
+          <input
+            type="text"
+            placeholder="Amount"
+            id="amount"
+            required
+            name="amount"
+          />
+          <p></p>
+        </div>
+        <div class="form_group">
+            <input
+              type="text"
+              placeholder="sku"
+              id="sku"
+              required
+              name="sku"
+            />
+            <p></p>
+          </div>
+          <div class="form_group">
+            <input
+              type="hidden"
+              id="id"
+              required
+              name="id"
+            />
+            <p></p>
+          </div>
+        <div class="form_group">
+        <textarea
+            id="description"
+            rows="5"
+            cols="16"
+            name="description">
+            Your Product Description here.
+        </textarea>
+        </div>
+        <br>
+        <button onclick="saveProduct()" class="submitbtn">
+          Submit
+        </button>
+      </div>
+    </div>
+
+</body>
+</html>
